@@ -1,5 +1,5 @@
 module DemoPackageJH
 
-print_greeting() = printstyled("Hello, world!"; color=:blue)
+print_greeting(io::IO = stdout) = printstyled(io, "Hello, world!"; color=:blue)
 
 end
